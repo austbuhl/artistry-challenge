@@ -18,3 +18,24 @@ After modifying the schema, these are your deliverables:
 4) There should be an index page for all the instruments, where the name of all the instruments should be listed out, alongside each of their classifications.
 
 5) I should also be able to save a new artist into the database. While it's possible for an artist to have the same name, an artist must have a name. An artist must also have an unique title. After successfully creating an artist, I should be taken to the artist's show page.
+
+
+# NOTES
+Artist -< Artist_Instrument >- Instrument
+
+Need an artist form with instrument drop-downs (2 collection_selects?)
+- Should write to the artist_instrument table
+- Redirect to artist show page after creation
+- Validations:
+    - name presence: true
+    - names can duplicate
+    - must have a unique title
+
+Artist Show Page
+- Show age, title, name and instruments played
+
+Artist Index Page
+- list of all artists' names, link_to artist show pages
+
+Instrument Index Page
+- list all instruments alongside each of their classifications...

@@ -1,0 +1,7 @@
+<h1>Instruments Page</h1>
+
+<ul>
+    <% @instruments.each do |instrument| %>
+        <li> <%= "Instrument: " + instrument.name + " - Classification: " + instrument.classification %> </li>
+    <% end %>
+</ul>
